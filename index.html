@@ -31,15 +31,32 @@
     </div>
     <script>
         "use strict";
+        // pi is a Number
         const pi = 3.14159265359;
-        let a = 4;
-        let b = 3;
-        let c = 9;
-        let d = 9;
+
+        // a is a String
+        let a = 'Hallo JavaScript-Essentials-Training!';
+
+        // b is a Boolean
+        let b = false;
+
+        // c is a Object 
+        let c = {
+            name: 'Maren',
+            gender: 'female',
+            age: 28,
+            single: true
+        }
 
         console.log('Hallo JavaScript-Essentials-Training!');
         console.log(a, b);
-
+        let car = {
+            make: 'Ford'
+        }
+        car.model = 'Mustang'; // {make: "Ford", model: "Mustang"}
+        car['year'] = 1965; // {make: "Ford", model: "Mustang", year: 1965}
+        car.drive = () => 'wrooooom'; // {make: "Ford", model: "Mustang", year: 1965, drive: ƒ}
+        console.log(car.drive())
 
     </script>
 </body>
