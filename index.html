@@ -30,12 +30,19 @@
         Hallo JavaScript-Essentials-Training!
     </div>
     <script>
+        "use strict";
         const pi = 3.14159265359;
         let a = 4;
         let b = 3;
 
         console.log('Hallo JavaScript-Essentials-Training!');
         console.log(a, b);
+        var d;
+        console.log(c); // Uncaught ReferenceError: c is not defined
+        let c = 9;
+        console.log(d); // undefined
+        d = 9;
+        let hi = 'Moin';
 
 
     </script>
