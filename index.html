@@ -59,6 +59,14 @@
         car.drive = () => 'wrooooom'; // {make: "Ford", model: "Mustang", year: 1965, drive: ƒ}
         console.log(car.drive())
 
+        let names = ['Peter', 'Paul', 'Mary'];
+        names[0] // Peter
+        names.length // 3
+        names.push('Anna')
+        console.log(names)
+        // ["Peter", "Paul", "Mary", "Anna"]
+        names.length // 4
+
         // "Ford Mustang"
         let mycar = car.make + " " + car.model;
 
@@ -102,6 +110,47 @@
         console.log(58647 * 597)
         console.log(4572 / 9)
 
+        if (condition1) {
+            // block of code
+        } else if (condition2) {
+            // block of code
+        } else {
+            // block of code
+        }
+
+        switch (expression) {
+            case x:
+                // code block
+                break;
+            case y:
+                // code block
+                break;
+            default:
+            // code block
+        }
+
+        for (let i = 0; i < 3; i++) {
+            console.log(i)
+        }
+        // 0
+        // 1
+        // 2
+
+        for (let name of names) {
+            console.log(name)
+        }
+        // "Peter"
+        // "Paul"
+        // "Mary"
+        // "Anna" 
+
+        for (let key in car) {
+            console.log(key, car[key])
+        }
+        // make Ford
+        // model Mustang
+        // year 1965
+        // drive () => 'wrooooom'
     </script>
 </body>
 
