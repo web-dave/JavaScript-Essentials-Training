@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <title>Calculator - Gheorghe Marin Adrian</title>
-    <!-- <link rel="stylesheet" href="calc.css"> -->
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
 </head>
 
 <body>
@@ -68,26 +68,36 @@
 
         function operatorFn(op, op1, op2) {
             display.value = '';
-            operator = op;
+            let result = 0;
             let int1 = parseInt(op1, 10)
             let int2 = parseInt(op2, 10)
-            if (operant1 === 0) {
+
+            if (operator === '') {
+                operator = op;
                 return int2;
             }
-            console.log(int1, operator, int2);
+
             switch (operator) {
                 case '+':
-                    return (int1 + int2)
+                    result = (int1 + int2)
+                    break;
                 case '-':
-                    return (int1 - int2)
+                    result = (int1 - int2)
+                    break;
                 case 'x':
-                    return (int1 * int2)
+                    result = (int1 * int2)
+                    break;
                 case '/':
-                    return (int1 / int2)
+                    result = (int1 / int2)
+                    break;
 
                 default:
                     break;
             }
+            console.log(int1, operator, int2, result);
+            operator = op;
+
+            return result
         }
 
         for (let elem of document.querySelectorAll('button')) {
