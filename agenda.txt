@@ -64,6 +64,15 @@
 -	Closures
 -	Functions used as variable values
 
+5.11	Document Object Model (d3 15:00)
+-	DOM methods
+-	HTML objects
+-	DOM elements
+-	DOM HTML and CSS
+-	DOM manipulation
+-	Events and event listener
+
+---------------------------------------------------------------------------------------
 5.9	Objects (d3 9:00)
 -	Object definitions
 -	Object properties
@@ -78,13 +87,5 @@
 -	The this keyword
 -	Classes
 -	Constructors
-
-5.11	Document Object Model (d3 15:00)
--	DOM methods
--	HTML objects
--	DOM elements
--	DOM HTML and CSS
--	DOM manipulation
--	Events and event listener
 
 5.12	Discussion and Feedback
