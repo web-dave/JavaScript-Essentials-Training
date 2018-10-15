@@ -47,8 +47,11 @@
     <script>
         console.log(document.querySelector('button').innerText);
         for (let elem of document.querySelectorAll('button')) {
-            elem.onclick = (e) => console.log(e.target.innerText)
+            elem.onclick = (e) => {
+                document.querySelector('[name=display]').value += e.target.innerText;
+            }
         }
+
     </script>
 </body>
 
