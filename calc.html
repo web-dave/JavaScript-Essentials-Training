@@ -49,7 +49,9 @@
             if (!isNaN(value)) {
                 document.querySelector('[name=display]').value += value;
             } else {
-
+                if (value === 'c') {
+                    document.querySelector('[name=display]').value = '';
+                }
             }
         }
 
