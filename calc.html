@@ -45,13 +45,17 @@
         </div>
     </div>
     <script>
-        console.log(document.querySelector('button').innerText);
         for (let elem of document.querySelectorAll('button')) {
-            elem.onclick = (e) => {
-                document.querySelector('[name=display]').value += e.target.innerText;
-            }
+            elem.onclick = (e) => handleInput(e.target.innerText);
         }
 
+        function handleInput(value) {
+            if (!isNaN(value)) {
+                document.querySelector('[name=display]').value += value;
+            } else {
+
+            }
+        }
     </script>
 </body>
 
