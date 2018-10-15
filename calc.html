@@ -46,6 +46,9 @@
     </div>
     <script>
         console.log(document.querySelector('button').innerText);
+        for (let elem of document.querySelectorAll('button')) {
+            elem.onclick = (e) => console.log(e.target.innerText)
+        }
     </script>
 </body>
 
