@@ -152,6 +152,58 @@
         // year 1965
         // drive () => 'wrooooom'
 
+
+        // function add1(a, b) {
+        //     console.log(a + b)
+        // }
+
+        // let add2 = (a, b) => {
+        //     console.log(a + b);
+        // }
+
+        function hi() {
+            console.log('HI!')
+        }
+        // let hi_ = () => {
+        //     console.log('HI!')
+        // }
+
+        hi() // HI!
+
+        let add = (first, second, third) => {
+            console.log(first + second + third);
+        }
+
+        add(7, 8) // 15
+
+
+        // let setName = (firstname, lastname) => {
+        //     if (lastname) {
+        //         console.log('Hi, my name is', firstname, lastname)
+        //     } else {
+        //         console.log('Hi, my name is', firstname)
+        //     }
+        // }
+        let setName = (firstname, lastname = 'Walton') => {
+            console.log('Hi, my name is', firstname, lastname)
+        }
+        setName('Peter', 'Parker'); // Hi, my name is Peter Parker
+        setName('John'); // Hi, my name is John Walton
+
+
+        // closure
+        function logger(level) {
+            return function (msg) {
+                console[level]('My Level is:', level, 'and my message is:', msg)
+            }
+        }
+
+        let log = logger('log');
+        let warn = logger('warn');
+        log('Hi log'); // My Level is: log and my message is: Hi log
+        warn('this is a warning!'); // My Level is: warn and my message is: this is a warning!
+
+
     </script>
 </body>
 
