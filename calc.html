@@ -11,7 +11,7 @@
 
         <div name="calculator">
 
-            <input type="text" name="display" disabled />
+            <input disabled type="text" name="display" />
             <br>
 
             <button> 1 </button>
@@ -45,13 +45,48 @@
         </div>
     </div>
     <script>
+        let operant1 = 0;
+        let operator = '';
+        let display = document.querySelector('[name=display]');
+
         function handleInput(value) {
             if (!isNaN(value)) {
-                document.querySelector('[name=display]').value += value;
+                display.value += value;
             } else {
                 if (value === 'c') {
-                    document.querySelector('[name=display]').value = '';
+                    operant1 = 0;
+                    display.value = '';
+                } else if (value === '=') {
+                    display.value = operatorFn(operator, operant1, display.value)
+                    operant1 = 0;
+                    operator = '';
+                } else {
+                    operant1 = operatorFn(value, operant1, display.value)
                 }
+            }
+        }
+
+        function operatorFn(op, op1, op2) {
+            display.value = '';
+            operator = op;
+            let int1 = parseInt(op1, 10)
+            let int2 = parseInt(op2, 10)
+            if (operant1 === 0) {
+                return int2;
+            }
+            console.log(int1, operator, int2);
+            switch (operator) {
+                case '+':
+                    return (int1 + int2)
+                case '-':
+                    return (int1 - int2)
+                case 'x':
+                    return (int1 * int2)
+                case '/':
+                    return (int1 / int2)
+
+                default:
+                    break;
             }
         }
 
