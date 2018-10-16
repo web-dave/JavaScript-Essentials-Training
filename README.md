@@ -1,6 +1,11 @@
-# JavaScript-Essentials-Training
+# element-innerText
 
-This is a JavaScript Workshop.
+- check `document.querySelector('button').` in the browser Dev tools and find a solution to read the inner Text
+- add a `script` Tag at the end of the `body`
+- select the first button and print it to the console.
 
-So grap a browser and a Text Editor and let's get started.
-
+```html
+    <script>
+        console.log(document.querySelector('button').innerText);
+    </script>
+```
