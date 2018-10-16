@@ -1,6 +1,9 @@
-# JavaScript-Essentials-Training
+# Display
 
-This is a JavaScript Workshop.
+- write the onclick given value to the `display`
+- find a way to extend the value
+  _(check the concatenation operator)_
 
-So grap a browser and a Text Editor and let's get started.
-
+```javascript
+document.querySelector("[name=display]").value;
+```
