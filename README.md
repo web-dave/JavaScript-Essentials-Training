@@ -1,6 +1,11 @@
-# JavaScript-Essentials-Training
+# Fix Calculation
 
-This is a JavaScript Workshop.
+- fix the calculation
 
-So grap a browser and a Text Editor and let's get started.
-
+```js
+        function operatorFn(op, op1, op2) {
+            display.value = '';
+            let result = 0;
+            let int1 = parseInt(op1, 10) // <--
+            let int2 = parseInt(op2, 10) // <--
+```
