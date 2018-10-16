@@ -1,6 +1,9 @@
-# JavaScript-Essentials-Training
+# Element-onclick
 
-This is a JavaScript Workshop.
+- add onclick handler to each button\*
 
-So grap a browser and a Text Editor and let's get started.
-
+```js
+for (let elem of document.querySelectorAll("button")) {
+  elem.onclick = e => console.log(e.target.innerText);
+}
+```
