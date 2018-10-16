@@ -1,6 +1,8 @@
-# JavaScript-Essentials-Training
+# Operators
 
-This is a JavaScript Workshop.
+- solve the following tasks and promt the result into the console
 
-So grap a browser and a Text Editor and let's get started.
-
+- 4567 + 5467
+- 49685 - 3054
+- 58647 \* 597
+- 4572 / 9
