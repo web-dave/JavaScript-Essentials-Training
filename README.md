@@ -1,6 +1,9 @@
-# JavaScript-Essentials-Training
+# Loops
 
-This is a JavaScript Workshop.
+- Loop trough the car object and promt out the values
 
-So grap a browser and a Text Editor and let's get started.
-
+```Javascript
+        for (let key in car) {
+            console.log(key, car[key])
+        }
+```
