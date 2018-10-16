@@ -1,9 +1,5 @@
 # Improve the onclick logic
 
-This is a JavaScript Workshop.
-
-So grap a browser and a Text Editor and let's get started.
-
 - transfere the value to a funtion
 - decide in that function numbers are written to the display
 - clear if the value is `c`
