@@ -1,6 +1,32 @@
-# JavaScript-Essentials-Training
+# CSS-intro
 
-This is a JavaScript Workshop.
+- Wrap the Welcome text with a `div`
+- Add some nice Styling to the head
 
-So grap a browser and a Text Editor and let's get started.
+````html
+    <div>
+        Hallo JavaScript-Essentials-Training!
+    </div>
+    ```
+````
 
+```html
+...
+    <style>
+        body {
+            background-color: powderblue;
+            color: blue;
+        }
+
+        div {
+/* Set the Background Color of a Element */
+            background-color: aqua;
+/* Set the Text Color of a Element */
+            color: chocolate;
+/* Set the Shadow of a Element */
+            box-shadow: 9px 10px 18px 4px #333;
+        }
+    </style>
+
+</head>
+```
