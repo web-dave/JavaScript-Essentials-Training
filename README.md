@@ -1,6 +1,19 @@
-# JavaScript-Essentials-Training
+# Do some math
 
-This is a JavaScript Workshop.
+- write a function that adds two values
+- write a function for each of the main types of calculation
+- log the result to the console
 
-So grap a browser and a Text Editor and let's get started.
+```Javascript
+function add(a,b){
+  let result = a + b;
+  console.log(result);
+}
+```
 
+```Javascript
+let add(a,b) => {
+  let result = a + b;
+  console.log(result);
+}
+```
