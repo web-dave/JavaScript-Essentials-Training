@@ -57,6 +57,17 @@
         car.drive = () => 'wrooooom'; // {make: "Ford", model: "Mustang", year: 1965, drive: ƒ}
         console.log(car.drive())
 
+        let car2 = car;
+        car.make = 'Audi';
+
+        car2.model = 'A3';
+
+        let car3 = { ...car }
+
+        car3.model = 'Q7'
+
+        car3
+
     </script>
 </body>
 
