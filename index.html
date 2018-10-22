@@ -33,9 +33,22 @@
         "use strict";
         // pi is a Number
         const pi = 3.14159265359;
+        const dateOfBirth = new Date();
+        dateOfBirth = new Date(); // compile error!
 
+        const myObject = { name: 'Florian', dateOfBirth: '1985-08-04' };
+        // Object is mutable! 
+        myObject.name = 'Andreas';
+        // but you cannot change the reference 
+        myObject = { name: 'Peter' }; // this throws an error!
         // a is a String
         let a = 'Hallo JavaScript-Essentials-Training!';
+
+        let name = 'Tom';
+        let food = "pizza";
+        let intro = `Hi, my name is ${name} and I would like to have ${food}.`;
+        let intro_formated = `Hi,
+        my name is ${name} and I would like to have ${food}.`;
 
         // b is a Boolean
         let b = false;
