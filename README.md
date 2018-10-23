@@ -8,7 +8,7 @@
 <html>
 
 <head>
-    <title>Calculator - Gheorghe Marin Adrian</title>
+    <title>Calculator</title>
 </head>
 
 <body>
