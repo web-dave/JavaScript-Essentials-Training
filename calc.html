@@ -45,14 +45,14 @@
         </div>
     </div>
     <script>
+        let display = document.querySelector('[name=display]');
         function myClick(e) {
-            document.querySelector('[name=display]').value += e.target.innerText;
+            display.value += e.target.innerText;
         }
 
         for (let elem of document.querySelectorAll('button')) {
             elem.onclick = myClick
         }
-
     </script>
 </body>
 
