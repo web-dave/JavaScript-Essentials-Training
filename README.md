@@ -1,20 +1,9 @@
 # Heros
 
-- create a funtion which generates rows
-- write these rows to the `tbody` `innerHTML`
-- HINT: `.map()`
+- write sort funtions to sort by column
+- register this sortfunction onclick to the table headers
+- don't forget to write the sortetd data to the `tbody`
 
 ```js
-let createRow = data => {
-  return `<tr>
-            <th scope="row">${data.id}</th>
-            <td>${data.name}</td>
-            <td>${data.description}</td>
-            <td>${data.comics.returned}</td>
-        </tr>`;
-};
-
-let writeTable = rows => {
-  table.innerHTML = rows.join("");
-};
+results.sort((a, b) => a[colName] - b[colName]);
 ```
