@@ -1,8 +1,8 @@
 # Heros
 
 - write a funtion to send a `XMLHttpRequest`
-
-* and call this function
+- and call this function
+- check the result with a `console.log`
 
 ```js
 let getData = () => {
