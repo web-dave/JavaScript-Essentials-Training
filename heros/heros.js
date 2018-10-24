@@ -15,6 +15,7 @@
   };
 
   let getData = () => {
+    registerSort();
     xhttp.open("GET", url, true);
     xhttp.send();
     xhttp.onreadystatechange = function() {
