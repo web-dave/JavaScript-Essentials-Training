@@ -10,9 +10,14 @@
     xhttp.send();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
-        // handle Response
+        handleResponse(this.responseText);
       }
     };
+  };
+
+  let handleResponse = text => {
+    results = JSON.parse(text).data.results;
+    writeTable(results.map(item => createRow(item)));
   };
 
   getData();
