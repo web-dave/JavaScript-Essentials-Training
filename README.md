@@ -20,6 +20,4 @@ let getData = () => {
     }
   };
 };
-
-getData();
 ```
