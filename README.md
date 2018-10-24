@@ -1,55 +1,38 @@
-# Styling
+# Heros
 
-- add the styling
-- remeber where to put your styling (externel)
+- create a `heros` folder
+- create a `heros.html` inside this folder
+- create a `heros.js` inside this folder
 
-```css
-#calc-contain {
-  position: relative;
-  width: 400px;
-  border: 2px solid black;
-  border-radius: 12px;
-  margin: 0px auto;
-  padding: 20px 20px 100px 20px;
-}
-#agh {
-  position: relative;
-  float: right;
-  margin-top: 15px;
-}
-#agh p {
-  font-size: 20px;
-  font-weight: 900;
-}
-input[type="button"],
-button {
-  background: lightGray;
-  width: 20%;
-  font-size: 20px;
-  font-weight: 900;
-  border-radius: 7px;
-  margin-left: 13px;
-  margin-top: 10px;
-}
-input[type="button"]:active,
-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-input[type="button"]:hover,
-button:hover {
-  background-color: #003300;
-  color: white;
-}
+```html
+<!DOCTYPE html>
+<html lang="en">
 
-input[type="text"] {
-  position: relative;
-  display: block;
-  width: 90%;
-  margin: 5px auto;
-  font-size: 20px;
-  padding: 10px;
-  box-shadow: 4px 0px 12px black inset;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Heros</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <h2>Marvel Heros</h2>
+    <table class="table table-striped table-dark">
+        <thead>
+            <tr>
+                <th scope="col" class="sortBtn">ID</th>
+                <th scope="col" class="sortBtn">NAME</th>
+                <th scope="col" class="sortBtn">DESCRIPTION</th>
+                <th scope="col" class="sortBtn">RETURNED</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="./heros.js"></script>
+</body>
+
+</html>
 ```
