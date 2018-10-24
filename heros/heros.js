@@ -5,6 +5,15 @@
   let table = document.querySelector("tbody");
   let results;
 
+  let createRow = data => {
+    return `<tr>
+            <th scope="row">${data.id}</th>
+            <td>${data.name}</td>
+            <td>${data.description}</td>
+            <td>${data.comics.returned}</td>
+        </tr>`;
+  };
+
   let getData = () => {
     xhttp.open("GET", url, true);
     xhttp.send();
@@ -17,6 +26,11 @@
 
   let handleResponse = text => {
     results = JSON.parse(text).data.results;
+    writeTable(results.map(item => createRow(item)));
+  };
+
+  let writeTable = rows => {
+    table.innerHTML = rows.join("");
   };
 
   getData();
