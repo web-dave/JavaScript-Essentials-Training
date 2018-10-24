@@ -17,7 +17,6 @@
 
   let handleResponse = text => {
     results = JSON.parse(text).data.results;
-    writeTable(results.map(item => createRow(item)));
   };
 
   getData();
