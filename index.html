@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript-Essentials-Training</title>
+    <style>
+      body {
+        background-color: powderblue;
+        color: blue;
+      }
+
+      div {
+        /* Set the Background Color of a Element */
+        background-color: aqua;
+        /* Set the Text Color of a Element */
+        color: chocolate;
+        /* Set the Shadow of a Element */
+        box-shadow: 9px 10px 18px 4px #333;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>Hallo JavaScript-Essentials-Training!</div>
+    <script>
+      "use strict";
+      const pi = 3.14159265359;
+      let a = 4;
+      let b = 3;
+
+      console.log("Hallo JavaScript-Essentials-Training!");
+      console.log(a, b);
+      let car = {
+        make: "Ford",
+      };
+      car.model = "Mustang";
+      car["year"] = 1965;
+      car.drive = () => "wrooooom";
+      console.log(car.drive());
+      console.log(4567 + 5467);
+      console.log(49685 - 3054);
+      console.log(58647 * 597);
+      console.log(4572 / 9);
+      for (let key in car) {
+        console.log(key, car[key]);
+      }
+
+      function add(a, b) {
+        let result = a + b;
+        console.log(result);
+      }
+      add(a, b);
+    </script>
+  </body>
+</html>
