@@ -23,35 +23,70 @@
   </head>
 
   <body>
+    Body Text
     <div>Hallo JavaScript-Essentials-Training!</div>
     <script>
       "use strict";
+      var foo;
+      //   let foo_;
+      console.log(foo);
+      var foo = "bar";
+      let foo_ = "bar_";
+      foo_ = 1;
+      console.log(foo_);
+    </script>
+    <script>
+      "use strict";
       const pi = 3.14159265359;
-      let a = 4;
-      let b = 3;
+      var a = 4;
+      let b = "3";
+      console.log(a + "2");
+      const baz = `Hallo
+      JavaScript-Essentials-Training
+      
+      
+      ---------------
+      
+      
+      
+      ${pi}!`;
 
-      console.log("Hallo JavaScript-Essentials-Training!");
-      console.log(a, b);
+      console.log(baz);
+      console.log("${pi}");
+      console.log(a, b, foo_, true);
+
       let car = {
         make: "Ford",
+        color: "hotpink",
       };
       car.model = "Mustang";
       car["year"] = 1965;
       car.drive = () => "wrooooom";
       console.log(car.drive());
-      console.log(4567 + 5467);
-      console.log(49685 - 3054);
-      console.log(58647 * 597);
-      console.log(4572 / 9);
-      for (let key in car) {
-        console.log(key, car[key]);
+      car[1] = 2;
+      console.log(1 + false + "" + 1 + false);
+
+      const keys = Object.keys(car).sort();
+      delete car["year"];
+      console.log(keys);
+      for (const key of keys) {
+        if (car.hasOwnProperty(key)) {
+          const element = car[key];
+          console.log(key, element);
+        }
       }
 
+      const that = this;
+
       function add(a, b) {
-        let result = a + b;
-        console.log(result);
+        a++;
+        return a + b;
       }
-      add(a, b);
+
+      console.log(add(3, 4));
+      function paint(car) {
+        car.color = "blue";
+      }
     </script>
   </body>
 </html>
