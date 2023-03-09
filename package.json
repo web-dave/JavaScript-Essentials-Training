@@ -1,0 +1,34 @@
+{
+  "name": "js-ws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "calc.js",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "echo PRE",
+    "deploy": "echo deploy && npm run step1",
+    "postdeploy": "echo POST",
+    "step1": "echo 1",
+    "step2": "echo 2",
+    "step3": "echo 3",
+    "step4": "echo 4",
+    "sident": "echo 🍌",
+    "president": "echo 🤡",
+    "prepresident": "echo 🤡🤡",
+    "start": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-dave/JavaScript-Essentials-Training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/web-dave/JavaScript-Essentials-Training/issues"
+  },
+  "homepage": "https://github.com/web-dave/JavaScript-Essentials-Training#readme"
+}

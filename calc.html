@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="calc.css" />
     <title>Calculator - Gheorghe Marin Adrian</title>
   </head>
 
   <body>
     <div id="calc-contain">
       <div name="calculator">
-        <input type="text" name="display" disabled />
+        <input type="text" name="display" maxlength="4" />
         <br />
         <!-- <div> -->
         <button>1</button>
@@ -39,6 +40,7 @@
         <p>Calc</p>
       </div>
     </div>
-    <script src="./calc.js"></script>
+
+    <script type="module" src="./calc.js"></script>
   </body>
 </html>
